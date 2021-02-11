@@ -41,11 +41,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(
+    115deg,
+    rgba(0,0,0, .7),
+    rgba(0,0,0.7)
+  ),
+  url(https://www.xm.com/assets/img/pages/home/homepage-2020-2.jpg);
+
 }
+
 #intro {
   text-align: center;
   padding: 10px;
   font-family: sans-serif;
+  
 }
 
 #intro h1 {
@@ -196,15 +205,263 @@ footer #copy-right {
   color: rgb(107, 107, 105);
   text-align: center;
   position: fixed;
-  bottom: 22%;
+  bottom: 26%;
   left: 86%
 }
 
-@media screen and (min-width: 768px) {
-footer{
-    display: none;
+#ipad-intro-container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  bottom: 20px;
+  display: none;
 
 }
+
+.my-slides {
+  display: none;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 20px;
+  padding: 14px;
+}
+
+
+.my-slides span {
+  display: none;
+}
+
+.my-slides h2 {
+  font-size: 2em;
+  padding-bottom: 7px;
+  }
+
+.prev, .next {
+  cursor: pointer;
+ position: absolute;
+ top: 40%;
+ width: auto;
+ margin: -22px 30px;
+ padding: 16px;
+ font-weight: bold;
+ font-size: 26px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+ color: rgb(224, 222, 222);
+
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+#platform-container {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 100vw;
+  text-align: center;
+  display: none;
+}
+
+#platform-container img {
+  width: 80%;
+ 
+}
+#platform-text{
+  padding: 30px;
+}
+#platform-text h3{
+  margin: 15px;
+}
+.laptop-icon{
+  float: left;
+  position: relative;
+  left: 10%;
+  top: -1px;
+}
+
+#laptop-platform {
+  color: rgb(194, 34, 34);
+  width: 50%;
+  padding: 15px;
+  margin: auto;
+  border: 1px solid rgb(194, 34, 34);
+  margin-bottom: 50px;
+}
+
+/* Charts/Products css*/
+
+#charts-flex-containner{
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  display: none;
+}
+
+.charts-content{
+  
+  color: rgb(78, 77, 77);
+  width: 22%;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.charts-content p{
+  font-size: 0.8em;
+  
+}
+.charts-content i {
+  font-size: 5em;
+  color: rgb(194, 34, 34);
+  
+}
+/*Awards section*/
+#latest-awards{
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  padding: 100px 0 50px;
+  color: rgb(88, 86, 86);
+  width: 100vw;
+  display: none;
+}
+#awards-containner{
+  background-color: rgb(247, 247, 247);
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.8em;
+  width: 100vw;
+  display: none;
+}
+
+
+.awards-content {
+  width: 40%;
+
+  margin: 30px 10px;
+  text-align: center;
+}
+
+.h-line{
+  border-bottom: 2px solid rgb(226, 223, 223);
+  width: 50%;
+  margin: 20px auto;
+}
+
+#view-our-awards{
+  background-color: rgb(247, 247, 247);
+  padding: 100px 0;
+  color: rgb(88, 86, 86);
+  text-align: center;
+  width: 100vw;
+  display: none;
+}
+
+#view-our-awards span {
+  border: 1px solid  rgb(117, 117, 117);
+  padding: 15px 50px;
+  font-weight: 700;
+}
+
+/*Reasons to chooose Broker section */
+
+#choose-broker-flex-containner{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+color: rgb(7, 7, 7);
+width: 100vw;
+display: none;
+}
+#broker-heading{
+
+  width: 80%;
+}
+
+#broker-heading h2{
+  padding: 40px 0 20px;
+ 
+}
+#broker-heading p{
+  font-size: 0.8em;
+  text-align: center;
+ 
+}
+.broker-content {
+  width: 45%;
+  margin: 10px;
+  text-align: left;
+  padding: 80px 0;
+  
+}
+.broker-content p {
+  font-size: 0.8em;
+}
+.broker-content i {
+  float: left;
+  color: rgb(165, 42, 42);
+  font-size: 5em;
+  height: 120%;
+  padding-right: 30px; 
+}
+
+
+
+/* Ipad Responsive style*/
+
+@media screen and (min-width: 768px) {
+#intro h2, #intro p{
+    display: none;
+}
+
+#account-div-containner{
+justify-content: center;
+margin: auto;
+position: relative;
+
+}
+.account-div{
+  width: 45%;
+ }
+ #first-account-div{
+   float: left;
+   margin-left: 28px
+
+ }
+ #second-account-div{
+  float: right;
+  margin-right: 28px
+}
+#ipad-intro-container{
+  display: block;
+}
+#empty-div {
+  margin-bottom: 0;
+}
+#arrow{
+ bottom: 10.5%;
+}
+ 
+#charts-flex-containner, #awards-containner, #choose-broker-flex-containner{
+  display: flex;
+}
+#latest-awards, #view-our-awards, #platform-container {
+  display: block;
+}
+}
+
+/* computers and larger screen design*/
+
+@media screen and (min-width: 1024){
+
 
 }
 
