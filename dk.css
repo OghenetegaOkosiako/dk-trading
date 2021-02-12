@@ -8,15 +8,17 @@ body {
   background-color: black;
   color: white;
   font-size: 100%;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 header nav {
   border-bottom: 1px solid rgb(223, 222, 222);
   font-size: 0.8em;
-  font-family: Bebas, BebasExt, sans-serif;
   height: auto;
   max-width: 100%;
   padding: 20px;
@@ -41,20 +43,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(
-    115deg,
-    rgba(0,0,0, .7),
-    rgba(0,0,0.7)
-  ),
-  url(https://www.xm.com/assets/img/pages/home/homepage-2020-2.jpg);
-
+  background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0.7)),
+    url(https://www.xm.com/assets/img/pages/home/homepage-2020-2.jpg);
 }
 
 #intro {
   text-align: center;
   padding: 10px;
   font-family: sans-serif;
-  
 }
 
 #intro h1 {
@@ -69,7 +65,7 @@ main {
   color: red;
 }
 
-#pipe {
+.pipe {
   color: rgba(242, 245, 239, 0.7);
   font-style: italic;
   margin: 0 15px 0 10px;
@@ -135,9 +131,6 @@ h6 {
   margin-top: 5px;
   justify-self: center;
   text-align: center;
-}
-
-#second-section div {
   font-size: 2em;
   color: rgb(184, 28, 28);
 }
@@ -164,10 +157,14 @@ footer div {
 
 footer #copy-right {
   margin-bottom: 2em;
+  text-align: center;
 }
 
 #footer-content {
-    margin-bottom: 15em;
+ margin-bottom: 15em;
+ margin-left: auto;
+ margin-right: auto;
+ width: 90vw;
 }
 
 #risk-bar {
@@ -179,13 +176,18 @@ footer #copy-right {
   padding: 0.4em 1.1em;
   position: fixed;
   bottom: 0;
-  
 }
 
 #risk-bar span {
   color: red;
   font-weight: bold;
   font-size: 1.1em;
+}
+#risk-bar div {
+  opacity: 1;
+  width: 85vw;
+  margin: auto;
+  font-size: .9em;
 }
 #risk-bar span i {
   position: relative;
@@ -205,27 +207,26 @@ footer #copy-right {
   color: rgb(107, 107, 105);
   text-align: center;
   position: fixed;
-  bottom: 26%;
-  left: 86%
+  bottom: 25%;
+  z-index: 1;
+  left: 86%;
 }
 
-#ipad-intro-container{
+#ipad-intro-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
   bottom: 20px;
   display: none;
-
 }
 
 .my-slides {
   display: none;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
   margin-bottom: 20px;
   padding: 14px;
 }
-
 
 .my-slides span {
   display: none;
@@ -234,29 +235,28 @@ footer #copy-right {
 .my-slides h2 {
   font-size: 2em;
   padding-bottom: 7px;
-  }
+}
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
- position: absolute;
- top: 40%;
- width: auto;
- margin: -22px 30px;
- padding: 16px;
- font-weight: bold;
- font-size: 26px;
- transition: 0.6s ease;
- border-radius: 0 3px 3px 0;
- user-select: none;
- color: rgb(224, 222, 222);
-
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin: -22px 30px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 26px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  color: rgb(224, 222, 222);
 }
 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 
 #platform-container {
   background-color: rgb(255, 255, 255);
@@ -268,15 +268,14 @@ footer #copy-right {
 
 #platform-container img {
   width: 80%;
- 
 }
-#platform-text{
+#platform-text {
   padding: 30px;
 }
-#platform-text h3{
+#platform-text h3 {
   margin: 15px;
 }
-.laptop-icon{
+.laptop-icon {
   float: left;
   position: relative;
   left: 10%;
@@ -294,7 +293,7 @@ footer #copy-right {
 
 /* Charts/Products css*/
 
-#charts-flex-containner{
+#charts-flex-containner {
   background-color: rgb(247, 247, 247);
   display: flex;
   flex-wrap: wrap;
@@ -303,25 +302,22 @@ footer #copy-right {
   display: none;
 }
 
-.charts-content{
-  
+.charts-content {
   color: rgb(78, 77, 77);
   width: 22%;
   margin: 20px;
   text-align: center;
   padding: 10px;
 }
-.charts-content p{
+.charts-content p {
   font-size: 0.8em;
-  
 }
 .charts-content i {
   font-size: 5em;
   color: rgb(194, 34, 34);
-  
 }
 /*Awards section*/
-#latest-awards{
+#latest-awards {
   text-align: center;
   background-color: rgb(247, 247, 247);
   padding: 100px 0 50px;
@@ -329,7 +325,7 @@ footer #copy-right {
   width: 100vw;
   display: none;
 }
-#awards-containner{
+#awards-containner {
   background-color: rgb(247, 247, 247);
   color: black;
   display: flex;
@@ -340,7 +336,6 @@ footer #copy-right {
   display: none;
 }
 
-
 .awards-content {
   width: 40%;
 
@@ -348,13 +343,13 @@ footer #copy-right {
   text-align: center;
 }
 
-.h-line{
+.h-line {
   border-bottom: 2px solid rgb(226, 223, 223);
   width: 50%;
   margin: 20px auto;
 }
 
-#view-our-awards{
+#view-our-awards {
   background-color: rgb(247, 247, 247);
   padding: 100px 0;
   color: rgb(88, 86, 86);
@@ -364,43 +359,44 @@ footer #copy-right {
 }
 
 #view-our-awards span {
-  border: 1px solid  rgb(117, 117, 117);
+  border: 1px solid rgb(117, 117, 117);
   padding: 15px 50px;
   font-weight: 700;
 }
 
+#large-view-nav {
+  display: none;
+}
+
 /*Reasons to chooose Broker section */
 
-#choose-broker-flex-containner{
+#choose-broker-flex-containner {
   background-color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
-flex-wrap: wrap;
-justify-content: center;
-color: rgb(7, 7, 7);
-width: 100vw;
-display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(7, 7, 7);
+  width: 100vw;
+  display: none;
+  padding-bottom: 100px;
 }
-#broker-heading{
-
+#broker-heading {
   width: 80%;
 }
 
-#broker-heading h2{
+#broker-heading h2 {
   padding: 40px 0 20px;
- 
 }
-#broker-heading p{
+#broker-heading p {
   font-size: 0.8em;
   text-align: center;
- 
 }
 .broker-content {
   width: 45%;
   margin: 10px;
   text-align: left;
   padding: 80px 0;
-  
 }
 .broker-content p {
   font-size: 0.8em;
@@ -410,59 +406,190 @@ display: none;
   color: rgb(165, 42, 42);
   font-size: 5em;
   height: 120%;
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 
-
+#large-view-footer{
+  display: none;
+}
 
 /* Ipad Responsive style*/
+@media screen and (min-width: 411px){
+
+ #arrow{
+   bottom: 20%;
+ }
+}
 
 @media screen and (min-width: 768px) {
-#intro h2, #intro p{
+  #intro h2,
+  #intro p {
     display: none;
-}
+  }
 
-#account-div-containner{
-justify-content: center;
-margin: auto;
-position: relative;
+  #account-div-containner {
+    justify-content: center;
+    margin: auto;
+    position: relative;
+  }
+  .account-div {
+    width: 45%;
+  }
+  #first-account-div {
+    float: left;
+    margin-left: 28px;
+  }
+  #second-account-div {
+    float: right;
+    margin-right: 28px;
+  }
+  #ipad-intro-container {
+    display: block;
+  }
+  #empty-div {
+    margin-bottom: 0;
+  }
+  #arrow {
+    bottom: 5.5%;
+    left: 95%;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+  }
 
-}
-.account-div{
-  width: 45%;
- }
- #first-account-div{
-   float: left;
-   margin-left: 28px
-
- }
- #second-account-div{
-  float: right;
-  margin-right: 28px
-}
-#ipad-intro-container{
-  display: block;
-}
-#empty-div {
-  margin-bottom: 0;
-}
-#arrow{
- bottom: 10.5%;
-}
- 
-#charts-flex-containner, #awards-containner, #choose-broker-flex-containner{
-  display: flex;
-}
-#latest-awards, #view-our-awards, #platform-container {
-  display: block;
-}
+  #charts-flex-containner,
+  #awards-containner,
+  #choose-broker-flex-containner {
+    display: flex;
+  }
+  #latest-awards,
+  #view-our-awards,
+  #platform-container {
+    display: block;
+  }
 }
 
 /* computers and larger screen design*/
 
-@media screen and (min-width: 1024){
+ {
+  .account-div {
+    width: 45%;
+  }
 
+  #account-div-containner{
+    width: 900px;
+  }
+  #large-view-nav{
+    display: block;
+  }
+  
+#first-bar{
+    border-bottom: 1px solid rgb(153, 151, 151);; 
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  #p-div {
+    font-size: .6em;
+    width: 300px;
+    word-wrap: normal;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    float: left;
+    border-left: 1px solid rgb(153, 151, 151);
+    border-right: 1px solid rgb(153, 151, 151);
+  }
+ 
+  #first-bar ul li{
+  display: inline;
+  border: 1px solid rgb(153, 151, 151);
+  margin: 5px;
+  font-size: .7em;
+  padding: 8px;
+  }
 
+  #first-bar ul {
+    margin: 15px 0 0 30px;
+  }
+
+  header nav{
+    display: none;
+  }
+  #second-large-view-nav{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  }
+ 
+  #second-large-view-nav ul li{
+    display: inline;
+    padding-right: 4px;
+    font-size: 0.7em;
+    
+  }
+
+  #dk-large-view-logo{
+    width: 300px;
+    font-size: 1.6em;
+    font-style: italic;
+  }
+
+  #dk-large-view-logo::first-letter{
+    color: red;
+  }
+#second-pipe{
+  height: 34px;
 }
+  #open-account-nav{
+    background-color:rgb(8, 165, 8);
+  }
 
+  #second-section div {
+  width: 20%;
+  padding: 10px;
+  }
 
+  .charts-content {
+    width: 20%;
+  }
+
+  .awards-content {
+    width: 150px;
+    font-size: 0.8em;
+  }
+
+  #latest-awards{
+    font-size: 1.3em;
+  }
+
+  .broker-content {
+    width: 40%;
+    padding: 30px 0;
+  }
+
+  #large-view-footer{
+    width: 100vw;
+    
+    background-color: rgb(68, 67, 67);
+   margin: auto;
+   display: block;
+   color: rgba(255, 255, 255, 1) !important;
+    
+  }
+
+  #large-view-footer-container{
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .large-view-footer-content{
+    font-size: 1.0em; 
+  }
+
+  #arrow {
+    bottom: 3.5%;
+  }
+}
